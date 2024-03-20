@@ -1,0 +1,140 @@
+body {
+    background-color: white;
+    animation: dayToNight 10s infinite 1.5s;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+
+.sun {
+    height: 260px;
+    width: 260px;
+    border-radius: 50%;
+    background-color: #fcd25b;
+}
+
+.shadow {
+    height: 270px;
+    width: 270px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    top: -50px;
+    left: 0px;
+    animation: moveshadow 10s infinite 1.5s;
+}
+
+.stars {
+    height: 10px;
+    width: 10px;
+    position: relative;
+    top: 380px;
+    left: 350px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 50px rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    animation: day 10s infinite 1.5s;   
+}
+
+.stars:nth-child(2) {
+    position: relative;
+    top: 850px;
+    left: 1350px;
+}
+
+.stars:nth-child(3) {
+    position: relative;
+    top: 200px;
+    left: 164px;
+}
+
+.stars:nth-child(4) {
+    position: relative;
+    top: 886px;
+    left: 664px;
+}
+
+.stars:nth-child(5) {
+    position: relative;
+    top: 465px;
+    left: 1684px;
+}
+
+.stars:nth-child(6) {
+    position: relative;
+    top: 34px;
+    left: 832px;
+}
+
+.stars:nth-child(7) {
+    position: relative;
+    top: 900px;
+    left: 1750px;
+}
+
+.stars:nth-child(8) {
+    position: relative;
+    top: 50px;
+    left: 1350px;
+}
+
+.stars:nth-child(9) {
+    position: relative;
+    top: 812px;
+    left: 123px;
+}
+
+.stars:nth-child(10) {
+    position: relative;
+    top: -100px;
+    left: 1850px;
+}
+
+@keyframes day{
+0%{
+    background-color: white;
+}
+25%{
+    background-color: #dfdcdc;
+}
+50%{
+    background-color: rgb(255, 255, 255);
+}
+75%{
+    background-color: #dfdcdc;
+}
+100% {
+    background-color: white;
+}
+}
+
+@keyframes moveshadow {
+    0% {
+        transform: translateX(250px);
+        background-color: rgb(255, 255, 255);
+    }
+    50% {
+        transform: translateX(-10px);
+        background-color: black;
+    }
+    100% {
+        transform: translateX(-270px);
+        background-color: white;
+    }
+}
+
+@keyframes dayToNight {
+    0% {
+        background-color: white;
+    }
+    50%{
+        background-color: black;
+    }
+    100% {
+        background-color: white;
+    }
+}
